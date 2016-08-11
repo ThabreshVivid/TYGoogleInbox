@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "CustomCell.h"
 static NSString *const kKeychainItemName = @"TYGoogleInbox";
-static NSString *const kClientID = @"686135602819-pgl08dnqpkmvs6m2l8872f8csu7nvi23.apps.googleusercontent.com";
+static NSString *const kClientID = @"YOUR CLIENT ID";
 @interface ViewController ()
 {
     BOOL LoginClicked;
