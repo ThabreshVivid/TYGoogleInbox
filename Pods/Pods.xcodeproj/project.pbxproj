@@ -1,0 +1,1167 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013773EF96C3CB2262D38011D56E703C /* GTLBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9355A064ABA95C2C67FE4B312F493F /* GTLBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		028227BC73AE3ECF40AEF3B5F3B7E3F6 /* GTMGatherInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6A46BD8E8E6DAEE7822BD13AE04D62 /* GTMGatherInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04802C5C663DCD2A0BE271EBA3F4AD14 /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A88912E84187D57A12944EE6B828D4 /* GTMGatherInputStream.m */; };
+		07B168F205DC8DB2808456FA9944F0F7 /* GTLGmailListHistoryResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F6A668AAD7B70A167296AA034BCAC46 /* GTLGmailListHistoryResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B4DEFCC1973E0888AD67AFEEC6C8D76 /* GTLGmailListThreadsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F089EEA4F513747129D398918FB8464A /* GTLGmailListThreadsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F5DBB9D0C3ECC03F304F7B41023132B /* GTLGmailMessagePartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF2BBC974DC12D6FD3B1E99202A8BED /* GTLGmailMessagePartBody.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		119FE29BCD703AA49C27FD238F804495 /* GTLGmailListHistoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 886EB33E8BB1979C57E418D536FD9F1D /* GTLGmailListHistoryResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		121FE13BA5E8937B28340EDBCB939C8B /* GTLUploadParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8089DF7AAC755395B0F84A0F7FE317B2 /* GTLUploadParameters.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		141D7B77AFEE698EB7F7E64544F74E57 /* GTLGmailListLabelsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A8E365429C665F4025765A92B6119 /* GTLGmailListLabelsResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14EE7389F53B53BFBA74342132E5CDA7 /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C78CF396FB6A70E1B2D52585917C423 /* GTMSessionUploadFetcher.m */; };
+		18E8D13EBDE57601D527315AD96545AF /* GTLObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6325A6583FCB7043007B6EF9EC9BC77F /* GTLObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1959B1C843C9193019A1ECA55C5108CC /* GTLGmailListLabelsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 93AF26C4E936EF4DE6A1E30F1D0E4286 /* GTLGmailListLabelsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C229A9E96AC1B5EF987FDC72860EBE /* GTLGmailHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E49B10961D8D0F556C19E33C15FC5B /* GTLGmailHistory.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2450C50D555B3AA9F7D1470040285C05 /* GTLGmailHistoryLabelRemoved.m in Sources */ = {isa = PBXBuildFile; fileRef = C8561FF56EC5E0878BA5AAE86D1D1F98 /* GTLGmailHistoryLabelRemoved.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		24C4117EBAA4DF39E896AA6FDA1EE0C4 /* GTLDateTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 451584B917156183558BC8ED788947ED /* GTLDateTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24F1850592C1A6698C69FBAC9BB43759 /* GTLJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4AC91A492D899497C3646BB935BF04 /* GTLJSONParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		271EE93B5FA90710E87CFAE13F7188B0 /* GTLQueryGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A36898A529F2B0BD278E81D18D4400 /* GTLQueryGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29448E22A83A3AAAA680A3E16688CDAC /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D92A50EAA4FF399D11F91A5A6363778 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF6EB9DBC8638C3A7C5D7F2AA6024F8 /* GTMOAuth2Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 5388A38CA0532B3E9501219432B4E185 /* GTMOAuth2Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF9D18E5BF7F195C793E4BF2D81BDEE /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6650F394C48A24CF485034A505D2A5B2 /* GTMSessionFetcher-dummy.m */; };
+		2D5F965EAA5690C7139DFF1D8B6B2183 /* GTLGmailProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D91A92A5DF393A2F439F1CB08C560FA /* GTLGmailProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E3ED8B8E60CFAFCB3D9C6A3B3A17E25 /* GTLFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C0D47B707E36A283190A6EC7BA3382E /* GTLFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ED7BBA469BB69D88D92FE798FB46584 /* GTLUploadParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9156202A4EDA650BE08368A73F62D76E /* GTLUploadParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		321359BC4174B407FCC7FB48B583960C /* GTLQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 06397D073FEF0E73B75C42196C11C761 /* GTLQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A678CE8A3B2B2ADBD8705D59A69DDA7 /* GTLGmailWatchResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52EF3F2735AA9326D9DFA8AE13B38F /* GTLGmailWatchResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3D94AF2F8086870CFD4CA369480994B7 /* GTLBatchQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 662EB691A2588889DC1DD5C1D677DB08 /* GTLBatchQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40298B9B6A547B8AC5C90C939EDA13BD /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E1D5D4CE80E96A00A0C334DF583ACC /* GTMOAuth2Authentication.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		406729424C86751E08E6CFB9C7F12FE6 /* GTLGmailMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = A01C2B71D58A0EA6AF78541F97EDE376 /* GTLGmailMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41C1FBEA93D4EEE88C3509F56541F8E4 /* GTLGmailListDraftsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED5ED6BCCF7C5047BBCA30440373F2 /* GTLGmailListDraftsResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		421900F2BA754E093B5E52F712C7C617 /* GTLGmailMessagePartBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D629D997AFC1AA173673E58777BD701 /* GTLGmailMessagePartBody.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		441E41B9EDB94A48F25FBE3EA8E30DA3 /* GTLFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 0433FF14DBB00253D5201AA69CD4FD9E /* GTLFramework.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		443E874767EBF345B20314A10A256E01 /* GTLGmailMessagePart.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2728ACE4B4316F17FC6FF7611EB5C7 /* GTLGmailMessagePart.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		452E06FC18C6A56B30CA8BC8B1870C44 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F1228297E5494D124149D07B9E135A3 /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		473955C8D4CF9B58CCCF5DA7179D85DD /* GTLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6BA6A495A51A9AF707B811F3125585 /* GTLObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4D1EAAB4816458A85403FEE0E00147D7 /* GTLGmailHistoryMessageAdded.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F005D2B1EBB15ECBFFC28755D1C949 /* GTLGmailHistoryMessageAdded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E9C876BF3D1DF8022500FE9952286EA /* GTLGmailWatchResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B7589B79A081CA82153B1F0159167F85 /* GTLGmailWatchResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50C8D711810408FB07257DAF6E396DE9 /* GTLGmailHistoryLabelAdded.h in Headers */ = {isa = PBXBuildFile; fileRef = 9036CFD86F88893C92A04CC1399C30EC /* GTLGmailHistoryLabelAdded.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51A7A9DAD8735BFBD3107771D35B2E82 /* GTLGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F43291DAF0371316BDDE2C111FD2DDF /* GTLGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5431E0ED94AE4BD61BA7AAD94EFA1918 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6EB1E32D6B3FA82EBEAC09987FEA9B /* Foundation.framework */; };
+		5A2C13825701F9543CE8F4EDC447777D /* GTLGmailListMessagesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 591BBECB0DD469BF661DBC3EE8AD1269 /* GTLGmailListMessagesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60004E63BB42C2901F2482A4B0F79429 /* GTLUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFB822F00188C8FF49BF0EE322F0F6D /* GTLUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61391F4205A162CF5678A987B5682B9E /* GTLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C33C04AC71C06152C5B9D01630A4B /* GTLUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6375578946FC47FDABC95E0C26BE44CA /* GTLErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4E71AEE1B390763CF623F2F9695D6 /* GTLErrorObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		63BE61EDF3579A70525D34C02500D812 /* GTLGmailMessagePartHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D8127D6546F74DB8795FF0A94C22A9 /* GTLGmailMessagePartHeader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		66543ED9C356971B9810344111E64B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6EB1E32D6B3FA82EBEAC09987FEA9B /* Foundation.framework */; };
+		672CB6C6EE0F5E3C45FCC5E2CB6F0B9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6EB1E32D6B3FA82EBEAC09987FEA9B /* Foundation.framework */; };
+		67DF14A72CD3DA705B8F515ABA2BBAFB /* GTLGmailLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4045D1E3B7DCCEDD750D9281EDA263EE /* GTLGmailLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		684F195513AE5221C7596424B582F595 /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 520755A8993460C80453AF728D2307C2 /* GTMOAuth2SignIn.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6DC40321D7D901F22F6E4EC34314A1E4 /* GTLGmailHistoryLabelRemoved.h in Headers */ = {isa = PBXBuildFile; fileRef = EC8B7B23993657783C32DB772F0B7ABC /* GTLGmailHistoryLabelRemoved.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1EC0DD52CD0DDE7C3BEE4FE0C96113 /* GTLGmailHistoryMessageDeleted.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F93D18C5CD62800EFE774A310835B05 /* GTLGmailHistoryMessageDeleted.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6F32C378B16AEE3FA913FBA31E0674E8 /* GTMReadMonitorInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 2405F92FB8179D13D4DD6FCCCA879D7F /* GTMReadMonitorInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF1B2CDA99FE21FB4630322FCCE4B11 /* GTLGmailListDraftsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EBEA1B2480DBB0AF87F799F1763671E /* GTLGmailListDraftsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		738D0B907D94CE9CF6B50C33F02F9045 /* GTLServiceGmail.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F112F1DEAD6F7C369623630113053FC /* GTLServiceGmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		746884B859B574DF7812483D68D58416 /* GTLErrorObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FB9ABB89BEE83B2C5F5CB2972B28415F /* GTLErrorObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74E218317A450A205DFFF989931A90B2 /* GTLBatchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9293976BB2D73EB3AEF331CCC96C56 /* GTLBatchResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783133A64946F813D13C12CD05C1A3D8 /* GTLGmailListMessagesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EE181F01F1FC306894C602B8AE114EB3 /* GTLGmailListMessagesResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7C90F0E197C73851BA24143F166FF750 /* GTLQueryGmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C54331309A949812EB8CB0F4AB57FD /* GTLQueryGmail.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		86CF5131E04A667EE381C38F172FB92E /* Pods-TYGoogleInbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFED43A590607C30B51EF33843197390 /* Pods-TYGoogleInbox-dummy.m */; };
+		87A1D56D03DF6C5ABFA30D103060AE3A /* GTLGmailDraft.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1621E1D5DD1A3E9D464E95B66AAF16 /* GTLGmailDraft.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89CD78524F5A15585ED0B00575F6260C /* GTLService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A39A29087D926ADE1FFA62C256BC5B3 /* GTLService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A16D075EE66B2B7D4F9213CC3877281 /* GTLGmailThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 5706B3DDCF3CDB2E5EF93196ABA4636B /* GTLGmailThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B2B63BE49D2DBE14760E0CB38F45260 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E0CB82826DD5417C8B2FB774B3EB97 /* Security.framework */; };
+		8BF5735791AB5809114959474BB19A4E /* GTLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBC352E2C64CD5823B20550BF5C5604 /* GTLQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8FDCB4C7E67DD4AF0614437BD4532802 /* GTLRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D892AFCFF023D331C38F970ABE442D /* GTLRuntimeCommon.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		96719DFA23FF0BA4124C20F9189CEB4D /* GTLRuntimeCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = A803532208EDDADC19478404FE11D796 /* GTLRuntimeCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A62E8334FF8C3C50A35FF5D429FF5C2 /* GTLGmailThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC1A559CD318D82C08CCDD7A7031621 /* GTLGmailThread.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A2A2711C67B61805B12ED436D6E3AAF3 /* GTLGmailLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 628827159301B46FF274241BF2AFB209 /* GTLGmailLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A590F16961EC52C384DDE2B731E79FA5 /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D7F78984CC69945E2441ED4739D732 /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A671F289347BC77BA9BEFDACE3FE60F4 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8095D6140FE90A1A695800708FA48E74 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A707329A8D6BD475D1718C49318701CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E0CB82826DD5417C8B2FB774B3EB97 /* Security.framework */; };
+		A73C9125CBCB8FADEDEBE8D645F14C4E /* GTLGmailConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C17FB12D8986586B5008C70064EE02F /* GTLGmailConstants.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AAA0682814C86D8FED1B7B8B365FE578 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 141FD109C49851ED64D0CF0E89D07DBB /* GTMSessionFetcherService.m */; };
+		AC03D30497FC9093F9254B773F8A8DD1 /* GTLGmailMessagePart.h in Headers */ = {isa = PBXBuildFile; fileRef = 989EA4083532703487DBB7DC7E3EBC10 /* GTLGmailMessagePart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC20193402CF7A3BFACF3254F77A4FCF /* GTLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A0B94E13D0E529882A8DD82256FFB7 /* GTLDateTime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ACC2D9024646A827532DA1920802446B /* GTLGmailHistoryLabelAdded.m in Sources */ = {isa = PBXBuildFile; fileRef = F3758F5DCB74E29162478CB8184152E4 /* GTLGmailHistoryLabelAdded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AF693322BAD5D3D0531CC113B455E84E /* GTLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F088B59F63C0FBFD6FB15B9260F018 /* GTLBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B1D6684A2AA014D4C01A6691E8AA2A12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6EB1E32D6B3FA82EBEAC09987FEA9B /* Foundation.framework */; };
+		B7449DE9E9B257F8F9DFAB06C9A30B0F /* GTLTargetNamespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E342ABD58464B3C0F44C598008A9591 /* GTLTargetNamespace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8F1945663D5975A06A8549B01E20FE0 /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 919C59A89AD5E631589BF4345F011B51 /* GTMOAuth2ViewControllerTouch.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B962847E94D0DE6DA8AC08B8E45916D3 /* GTLGmailDraft.h in Headers */ = {isa = PBXBuildFile; fileRef = AE63AA75F42BB1FFC191BC6153B4E0A8 /* GTLGmailDraft.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B96D28CF83EC0867AB4037C3D5AD5E6F /* GTLServiceGmail.m in Sources */ = {isa = PBXBuildFile; fileRef = A155386D0F6EEEF509CD7585FCBAA494 /* GTLServiceGmail.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BA136E571DE04F37E13845D137139398 /* GTLGmailMessagePartHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A50DB46559157679A914DCDA25B09343 /* GTLGmailMessagePartHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAB8271B2211193D28B624130FBBCC6B /* GTLBatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 7432FD3A9259EFF83AD5A35A396F8E0E /* GTLBatchResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BAF69D1F55A91E0144DAC44BB811A3C6 /* GTLGmailHistoryMessageDeleted.h in Headers */ = {isa = PBXBuildFile; fileRef = 176DBFCE0C39A87041C68227711F6F8A /* GTLGmailHistoryMessageDeleted.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF88CF80FAD38F2CEC411634C18344F0 /* GTLGmailListThreadsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 169CA5367433C2D974904B7D52F1FC06 /* GTLGmailListThreadsResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C06CA9ABC559E172B9F80F64F1F58B15 /* GTLGmailProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BFB18D049C63B6DAE74610BC8AA830 /* GTLGmailProfile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CBAB4E0516901EEA50D655FE533388F6 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B55097FDA866674400DB6D7C6647653 /* GTMReadMonitorInputStream.m */; };
+		CFE668491CFE89A6EE9B45CBFD601A1B /* GTLService.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA5471F07422E3B30E60A34B8517A6C /* GTLService.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D0A44C40856DB45D19483C9763EBEF40 /* GTLGmailConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F39EE40EE9DFE11BA44473161F60D948 /* GTLGmailConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2341E00E701E1B0047F7E5F1DBAC940 /* GTLBatchQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 051C04B0D8C81F6EC8FF2185D54D0AA9 /* GTLBatchQuery.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D6854C9A379D3F944896E2E372797612 /* GTMMIMEDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = A85188AE8C4809E3B3452014856B2E47 /* GTMMIMEDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6A2E78847EF81A68F0C76D309EECB48 /* GTLGmailMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D303E0B09B266DCC7C557EAD21B96D /* GTLGmailMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E0158B51F574F57C739D52C9B93B15D0 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E878D64FCCC45CA871F525925405B5F /* GTMMIMEDocument.m */; };
+		E0E1F562587D43FA7AC920586922CDE4 /* GTMOAuth2ViewControllerTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = FA34F048DB7D859225D22177D649C489 /* GTMOAuth2ViewControllerTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3D17CF9EF750F324D793C8D2BCE0664 /* GTLGmailHistoryMessageAdded.m in Sources */ = {isa = PBXBuildFile; fileRef = D654EC681CCD9584F4986101F448079E /* GTLGmailHistoryMessageAdded.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E6EBE608ABAAB74AAE9BE445C967FBC9 /* GoogleAPIClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42283B6DB14EE463B20CE4C357D215FD /* GoogleAPIClient-dummy.m */; };
+		E854EA55BEF49BA4D186E1ABFE54A91E /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA7FC7499A0D68979A3E4D7F785C2F /* GTMSessionFetcherLogging.m */; };
+		E8BB7D48DCBB26E6905696B0C047E494 /* GTLGmailHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = C2B7273523C579EC68460629CF8488F6 /* GTLGmailHistory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E99B88128E29AE015F35EB98F6F484A3 /* GTMOAuth2SignIn.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E53E37FB1249A135C2EDE96FC348D3 /* GTMOAuth2SignIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECB6EDB43E82AAE92DBA6D1F0275EDF6 /* GTLJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E6AFCFA782D01BB60A63FF401ABFE0 /* GTLJSONParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EE8DB117A98798152D0EC84FB1C4FF17 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4EFC8CBCEB711C13A44435D8912E0E /* SystemConfiguration.framework */; };
+		F1985B511DF21E1D8C095AE1B841E009 /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 80156D9FA8ABE8DCEDC98DF1C595F0A4 /* GTMSessionFetcher.m */; };
+		F9045C69824A40D51D5F6F70AE7BABEE /* GTMOAuth2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF4EF061CCE74F1908A5098A5776BB7 /* GTMOAuth2-dummy.m */; };
+		FD0F1EA43789B2C125FE5E9676B16CEF /* GTLDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D7FF9C411D7FD9F19117B908A6DC834F /* GTLDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08E45C5E1A5EC0E952D7DD821EE1B47B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1816C9580C0DC0779C05DD88D95E73;
+			remoteInfo = GTMSessionFetcher;
+		};
+		2EEBE96DAC2EE5BBB1BD829AD4FF51AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EC508E2AD93A8B7862551E8450FF1A8;
+			remoteInfo = GTMOAuth2;
+		};
+		A29ED5CEC6160B6B21105C8A5AD0B652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1816C9580C0DC0779C05DD88D95E73;
+			remoteInfo = GTMSessionFetcher;
+		};
+		B17CB63D5D6BD0F7D76DD579490436DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E51BDE1CE7AB28A31330558A6B312184;
+			remoteInfo = GoogleAPIClient;
+		};
+		FB6D5E3194B21D18513285A0DCE4153C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1816C9580C0DC0779C05DD88D95E73;
+			remoteInfo = GTMSessionFetcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004ABDA9E393B3A584B8D5358B355884 /* Pods-TYGoogleInbox-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TYGoogleInbox-acknowledgements.plist"; sourceTree = "<group>"; };
+		01E49B10961D8D0F556C19E33C15FC5B /* GTLGmailHistory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailHistory.m; path = Source/Services/Gmail/Generated/GTLGmailHistory.m; sourceTree = "<group>"; };
+		0433FF14DBB00253D5201AA69CD4FD9E /* GTLFramework.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLFramework.m; path = Source/Utilities/GTLFramework.m; sourceTree = "<group>"; };
+		04E1D5D4CE80E96A00A0C334DF583ACC /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2Authentication.m; path = Source/GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		051C04B0D8C81F6EC8FF2185D54D0AA9 /* GTLBatchQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLBatchQuery.m; path = Source/Objects/GTLBatchQuery.m; sourceTree = "<group>"; };
+		06397D073FEF0E73B75C42196C11C761 /* GTLQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLQuery.h; path = Source/Objects/GTLQuery.h; sourceTree = "<group>"; };
+		070591755746C7CA810C9C3FD676748A /* Pods-TYGoogleInbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYGoogleInbox.debug.xcconfig"; sourceTree = "<group>"; };
+		0A2728ACE4B4316F17FC6FF7611EB5C7 /* GTLGmailMessagePart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailMessagePart.m; path = Source/Services/Gmail/Generated/GTLGmailMessagePart.m; sourceTree = "<group>"; };
+		0CFB822F00188C8FF49BF0EE322F0F6D /* GTLUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLUtilities.h; path = Source/Utilities/GTLUtilities.h; sourceTree = "<group>"; };
+		0EBEA1B2480DBB0AF87F799F1763671E /* GTLGmailListDraftsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailListDraftsResponse.h; path = Source/Services/Gmail/Generated/GTLGmailListDraftsResponse.h; sourceTree = "<group>"; };
+		0F6A668AAD7B70A167296AA034BCAC46 /* GTLGmailListHistoryResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailListHistoryResponse.h; path = Source/Services/Gmail/Generated/GTLGmailListHistoryResponse.h; sourceTree = "<group>"; };
+		141FD109C49851ED64D0CF0E89D07DBB /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		1421FB8E16C9F7B3FB994CCF86C70660 /* Pods-TYGoogleInbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TYGoogleInbox.release.xcconfig"; sourceTree = "<group>"; };
+		169CA5367433C2D974904B7D52F1FC06 /* GTLGmailListThreadsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailListThreadsResponse.m; path = Source/Services/Gmail/Generated/GTLGmailListThreadsResponse.m; sourceTree = "<group>"; };
+		176DBFCE0C39A87041C68227711F6F8A /* GTLGmailHistoryMessageDeleted.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailHistoryMessageDeleted.h; path = Source/Services/Gmail/Generated/GTLGmailHistoryMessageDeleted.h; sourceTree = "<group>"; };
+		1A39A29087D926ADE1FFA62C256BC5B3 /* GTLService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLService.h; path = Source/Objects/GTLService.h; sourceTree = "<group>"; };
+		1A52EF3F2735AA9326D9DFA8AE13B38F /* GTLGmailWatchResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailWatchResponse.m; path = Source/Services/Gmail/Generated/GTLGmailWatchResponse.m; sourceTree = "<group>"; };
+		1AC1A559CD318D82C08CCDD7A7031621 /* GTLGmailThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailThread.m; path = Source/Services/Gmail/Generated/GTLGmailThread.m; sourceTree = "<group>"; };
+		1F6A46BD8E8E6DAEE7822BD13AE04D62 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMGatherInputStream.h; path = Source/GTMGatherInputStream.h; sourceTree = "<group>"; };
+		230C33C04AC71C06152C5B9D01630A4B /* GTLUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLUtilities.m; path = Source/Utilities/GTLUtilities.m; sourceTree = "<group>"; };
+		2405F92FB8179D13D4DD6FCCCA879D7F /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMReadMonitorInputStream.h; path = Source/GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		2413B92D4E73B02BD6F03A135EA86689 /* GTMOAuth2.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMOAuth2.xcconfig; sourceTree = "<group>"; };
+		29A36898A529F2B0BD278E81D18D4400 /* GTLQueryGmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLQueryGmail.h; path = Source/Services/Gmail/Generated/GTLQueryGmail.h; sourceTree = "<group>"; };
+		2C0D47B707E36A283190A6EC7BA3382E /* GTLFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLFramework.h; path = Source/Utilities/GTLFramework.h; sourceTree = "<group>"; };
+		2D629D997AFC1AA173673E58777BD701 /* GTLGmailMessagePartBody.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailMessagePartBody.h; path = Source/Services/Gmail/Generated/GTLGmailMessagePartBody.h; sourceTree = "<group>"; };
+		37CC7AC6394E944186CA1041E9ADECDE /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		37F005D2B1EBB15ECBFFC28755D1C949 /* GTLGmailHistoryMessageAdded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailHistoryMessageAdded.h; path = Source/Services/Gmail/Generated/GTLGmailHistoryMessageAdded.h; sourceTree = "<group>"; };
+		38A0B94E13D0E529882A8DD82256FFB7 /* GTLDateTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLDateTime.m; path = Source/Objects/GTLDateTime.m; sourceTree = "<group>"; };
+		3ACA7FC7499A0D68979A3E4D7F785C2F /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		3E342ABD58464B3C0F44C598008A9591 /* GTLTargetNamespace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLTargetNamespace.h; path = Source/Utilities/GTLTargetNamespace.h; sourceTree = "<group>"; };
+		3F1228297E5494D124149D07B9E135A3 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		4045D1E3B7DCCEDD750D9281EDA263EE /* GTLGmailLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailLabel.m; path = Source/Services/Gmail/Generated/GTLGmailLabel.m; sourceTree = "<group>"; };
+		42283B6DB14EE463B20CE4C357D215FD /* GoogleAPIClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleAPIClient-dummy.m"; sourceTree = "<group>"; };
+		451584B917156183558BC8ED788947ED /* GTLDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLDateTime.h; path = Source/Objects/GTLDateTime.h; sourceTree = "<group>"; };
+		48E0CB82826DD5417C8B2FB774B3EB97 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		48F088B59F63C0FBFD6FB15B9260F018 /* GTLBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLBase64.m; path = Source/Utilities/GTLBase64.m; sourceTree = "<group>"; };
+		4B4E8781EC386B92819D4974A922E5E4 /* libGTMSessionFetcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGTMSessionFetcher.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9AB3BF969D42699688313E49EE9737 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		4F93D18C5CD62800EFE774A310835B05 /* GTLGmailHistoryMessageDeleted.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailHistoryMessageDeleted.m; path = Source/Services/Gmail/Generated/GTLGmailHistoryMessageDeleted.m; sourceTree = "<group>"; };
+		520755A8993460C80453AF728D2307C2 /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2SignIn.m; path = Source/GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		5388A38CA0532B3E9501219432B4E185 /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2Authentication.h; path = Source/GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		55D7F78984CC69945E2441ED4739D732 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		5706B3DDCF3CDB2E5EF93196ABA4636B /* GTLGmailThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailThread.h; path = Source/Services/Gmail/Generated/GTLGmailThread.h; sourceTree = "<group>"; };
+		58D892AFCFF023D331C38F970ABE442D /* GTLRuntimeCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRuntimeCommon.m; path = Source/Objects/GTLRuntimeCommon.m; sourceTree = "<group>"; };
+		591BBECB0DD469BF661DBC3EE8AD1269 /* GTLGmailListMessagesResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailListMessagesResponse.h; path = Source/Services/Gmail/Generated/GTLGmailListMessagesResponse.h; sourceTree = "<group>"; };
+		5E878D64FCCC45CA871F525925405B5F /* GTMMIMEDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = Source/GTMMIMEDocument.m; sourceTree = "<group>"; };
+		5F5A8E365429C665F4025765A92B6119 /* GTLGmailListLabelsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailListLabelsResponse.m; path = Source/Services/Gmail/Generated/GTLGmailListLabelsResponse.m; sourceTree = "<group>"; };
+		5F9293976BB2D73EB3AEF331CCC96C56 /* GTLBatchResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLBatchResult.h; path = Source/Objects/GTLBatchResult.h; sourceTree = "<group>"; };
+		60ED5ED6BCCF7C5047BBCA30440373F2 /* GTLGmailListDraftsResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailListDraftsResponse.m; path = Source/Services/Gmail/Generated/GTLGmailListDraftsResponse.m; sourceTree = "<group>"; };
+		628827159301B46FF274241BF2AFB209 /* GTLGmailLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailLabel.h; path = Source/Services/Gmail/Generated/GTLGmailLabel.h; sourceTree = "<group>"; };
+		6325A6583FCB7043007B6EF9EC9BC77F /* GTLObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLObject.h; path = Source/Objects/GTLObject.h; sourceTree = "<group>"; };
+		662EB691A2588889DC1DD5C1D677DB08 /* GTLBatchQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLBatchQuery.h; path = Source/Objects/GTLBatchQuery.h; sourceTree = "<group>"; };
+		6650F394C48A24CF485034A505D2A5B2 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		6F43291DAF0371316BDDE2C111FD2DDF /* GTLGmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmail.h; path = Source/Services/Gmail/Generated/GTLGmail.h; sourceTree = "<group>"; };
+		7432FD3A9259EFF83AD5A35A396F8E0E /* GTLBatchResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLBatchResult.m; path = Source/Objects/GTLBatchResult.m; sourceTree = "<group>"; };
+		78C54331309A949812EB8CB0F4AB57FD /* GTLQueryGmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLQueryGmail.m; path = Source/Services/Gmail/Generated/GTLQueryGmail.m; sourceTree = "<group>"; };
+		7C17FB12D8986586B5008C70064EE02F /* GTLGmailConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailConstants.m; path = Source/Services/Gmail/Generated/GTLGmailConstants.m; sourceTree = "<group>"; };
+		7C6BA6A495A51A9AF707B811F3125585 /* GTLObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLObject.m; path = Source/Objects/GTLObject.m; sourceTree = "<group>"; };
+		7D91A92A5DF393A2F439F1CB08C560FA /* GTLGmailProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailProfile.h; path = Source/Services/Gmail/Generated/GTLGmailProfile.h; sourceTree = "<group>"; };
+		7DBC352E2C64CD5823B20550BF5C5604 /* GTLQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLQuery.m; path = Source/Objects/GTLQuery.m; sourceTree = "<group>"; };
+		80156D9FA8ABE8DCEDC98DF1C595F0A4 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		8089DF7AAC755395B0F84A0F7FE317B2 /* GTLUploadParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLUploadParameters.m; path = Source/Objects/GTLUploadParameters.m; sourceTree = "<group>"; };
+		8095D6140FE90A1A695800708FA48E74 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		886EB33E8BB1979C57E418D536FD9F1D /* GTLGmailListHistoryResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailListHistoryResponse.m; path = Source/Services/Gmail/Generated/GTLGmailListHistoryResponse.m; sourceTree = "<group>"; };
+		8AF2BBC974DC12D6FD3B1E99202A8BED /* GTLGmailMessagePartBody.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailMessagePartBody.m; path = Source/Services/Gmail/Generated/GTLGmailMessagePartBody.m; sourceTree = "<group>"; };
+		8B55097FDA866674400DB6D7C6647653 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMReadMonitorInputStream.m; path = Source/GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		8F112F1DEAD6F7C369623630113053FC /* GTLServiceGmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLServiceGmail.h; path = Source/Services/Gmail/Generated/GTLServiceGmail.h; sourceTree = "<group>"; };
+		9036CFD86F88893C92A04CC1399C30EC /* GTLGmailHistoryLabelAdded.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailHistoryLabelAdded.h; path = Source/Services/Gmail/Generated/GTLGmailHistoryLabelAdded.h; sourceTree = "<group>"; };
+		9156202A4EDA650BE08368A73F62D76E /* GTLUploadParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLUploadParameters.h; path = Source/Objects/GTLUploadParameters.h; sourceTree = "<group>"; };
+		919C59A89AD5E631589BF4345F011B51 /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMOAuth2ViewControllerTouch.m; path = Source/Touch/GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93AF26C4E936EF4DE6A1E30F1D0E4286 /* GTLGmailListLabelsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailListLabelsResponse.h; path = Source/Services/Gmail/Generated/GTLGmailListLabelsResponse.h; sourceTree = "<group>"; };
+		97BFB18D049C63B6DAE74610BC8AA830 /* GTLGmailProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailProfile.m; path = Source/Services/Gmail/Generated/GTLGmailProfile.m; sourceTree = "<group>"; };
+		9838E4E5C37988ECDE190D92DA0C5CC6 /* libGoogleAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGoogleAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		989EA4083532703487DBB7DC7E3EBC10 /* GTLGmailMessagePart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailMessagePart.h; path = Source/Services/Gmail/Generated/GTLGmailMessagePart.h; sourceTree = "<group>"; };
+		9C78CF396FB6A70E1B2D52585917C423 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		9D92A50EAA4FF399D11F91A5A6363778 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		9D9355A064ABA95C2C67FE4B312F493F /* GTLBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLBase64.h; path = Source/Utilities/GTLBase64.h; sourceTree = "<group>"; };
+		9E1621E1D5DD1A3E9D464E95B66AAF16 /* GTLGmailDraft.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailDraft.m; path = Source/Services/Gmail/Generated/GTLGmailDraft.m; sourceTree = "<group>"; };
+		A01C2B71D58A0EA6AF78541F97EDE376 /* GTLGmailMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailMessage.h; path = Source/Services/Gmail/Generated/GTLGmailMessage.h; sourceTree = "<group>"; };
+		A0E6AFCFA782D01BB60A63FF401ABFE0 /* GTLJSONParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLJSONParser.m; path = Source/Utilities/GTLJSONParser.m; sourceTree = "<group>"; };
+		A155386D0F6EEEF509CD7585FCBAA494 /* GTLServiceGmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLServiceGmail.m; path = Source/Services/Gmail/Generated/GTLServiceGmail.m; sourceTree = "<group>"; };
+		A2D303E0B09B266DCC7C557EAD21B96D /* GTLGmailMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailMessage.m; path = Source/Services/Gmail/Generated/GTLGmailMessage.m; sourceTree = "<group>"; };
+		A50DB46559157679A914DCDA25B09343 /* GTLGmailMessagePartHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailMessagePartHeader.h; path = Source/Services/Gmail/Generated/GTLGmailMessagePartHeader.h; sourceTree = "<group>"; };
+		A803532208EDDADC19478404FE11D796 /* GTLRuntimeCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRuntimeCommon.h; path = Source/Objects/GTLRuntimeCommon.h; sourceTree = "<group>"; };
+		A85188AE8C4809E3B3452014856B2E47 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMIMEDocument.h; path = Source/GTMMIMEDocument.h; sourceTree = "<group>"; };
+		AAC2AED92EDBDC51019BEC82DDD0F238 /* Pods-TYGoogleInbox-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYGoogleInbox-frameworks.sh"; sourceTree = "<group>"; };
+		AD6EB1E32D6B3FA82EBEAC09987FEA9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AE63AA75F42BB1FFC191BC6153B4E0A8 /* GTLGmailDraft.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailDraft.h; path = Source/Services/Gmail/Generated/GTLGmailDraft.h; sourceTree = "<group>"; };
+		AE8AD76A2C8279867356C8EC08FBFB0D /* Pods-TYGoogleInbox-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TYGoogleInbox-resources.sh"; sourceTree = "<group>"; };
+		B7589B79A081CA82153B1F0159167F85 /* GTLGmailWatchResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailWatchResponse.h; path = Source/Services/Gmail/Generated/GTLGmailWatchResponse.h; sourceTree = "<group>"; };
+		BAD50C1D19EE223E434D31BB37175C9F /* Pods-TYGoogleInbox-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TYGoogleInbox-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD4AC91A492D899497C3646BB935BF04 /* GTLJSONParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLJSONParser.h; path = Source/Utilities/GTLJSONParser.h; sourceTree = "<group>"; };
+		BFD74891349FBA94863357846A74422A /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = Source/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		BFED43A590607C30B51EF33843197390 /* Pods-TYGoogleInbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TYGoogleInbox-dummy.m"; sourceTree = "<group>"; };
+		BFF4EF061CCE74F1908A5098A5776BB7 /* GTMOAuth2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMOAuth2-dummy.m"; sourceTree = "<group>"; };
+		C2B7273523C579EC68460629CF8488F6 /* GTLGmailHistory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailHistory.h; path = Source/Services/Gmail/Generated/GTLGmailHistory.h; sourceTree = "<group>"; };
+		C3F961859FB1FBF203E515277A7882C3 /* GoogleAPIClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleAPIClient.xcconfig; sourceTree = "<group>"; };
+		C4FBFB53E4406F0161FB12B2B2F95446 /* libPods-TYGoogleInbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYGoogleInbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8561FF56EC5E0878BA5AAE86D1D1F98 /* GTLGmailHistoryLabelRemoved.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailHistoryLabelRemoved.m; path = Source/Services/Gmail/Generated/GTLGmailHistoryLabelRemoved.m; sourceTree = "<group>"; };
+		CAC4E71AEE1B390763CF623F2F9695D6 /* GTLErrorObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLErrorObject.m; path = Source/Objects/GTLErrorObject.m; sourceTree = "<group>"; };
+		D654EC681CCD9584F4986101F448079E /* GTLGmailHistoryMessageAdded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailHistoryMessageAdded.m; path = Source/Services/Gmail/Generated/GTLGmailHistoryMessageAdded.m; sourceTree = "<group>"; };
+		D7FF9C411D7FD9F19117B908A6DC834F /* GTLDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLDefines.h; path = Source/GTLDefines.h; sourceTree = "<group>"; };
+		D9D8127D6546F74DB8795FF0A94C22A9 /* GTLGmailMessagePartHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailMessagePartHeader.m; path = Source/Services/Gmail/Generated/GTLGmailMessagePartHeader.m; sourceTree = "<group>"; };
+		DEA5471F07422E3B30E60A34B8517A6C /* GTLService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLService.m; path = Source/Objects/GTLService.m; sourceTree = "<group>"; };
+		E010F5D6B73DDE49208B169A769527BA /* libGTMOAuth2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGTMOAuth2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A88912E84187D57A12944EE6B828D4 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMGatherInputStream.m; path = Source/GTMGatherInputStream.m; sourceTree = "<group>"; };
+		EC8B7B23993657783C32DB772F0B7ABC /* GTLGmailHistoryLabelRemoved.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailHistoryLabelRemoved.h; path = Source/Services/Gmail/Generated/GTLGmailHistoryLabelRemoved.h; sourceTree = "<group>"; };
+		EE181F01F1FC306894C602B8AE114EB3 /* GTLGmailListMessagesResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailListMessagesResponse.m; path = Source/Services/Gmail/Generated/GTLGmailListMessagesResponse.m; sourceTree = "<group>"; };
+		F089EEA4F513747129D398918FB8464A /* GTLGmailListThreadsResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailListThreadsResponse.h; path = Source/Services/Gmail/Generated/GTLGmailListThreadsResponse.h; sourceTree = "<group>"; };
+		F3758F5DCB74E29162478CB8184152E4 /* GTLGmailHistoryLabelAdded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLGmailHistoryLabelAdded.m; path = Source/Services/Gmail/Generated/GTLGmailHistoryLabelAdded.m; sourceTree = "<group>"; };
+		F39EE40EE9DFE11BA44473161F60D948 /* GTLGmailConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLGmailConstants.h; path = Source/Services/Gmail/Generated/GTLGmailConstants.h; sourceTree = "<group>"; };
+		F7E53E37FB1249A135C2EDE96FC348D3 /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2SignIn.h; path = Source/GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		F9B675943135075DB9AF1A3614147147 /* GoogleAPIClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleAPIClient-prefix.pch"; sourceTree = "<group>"; };
+		FA34F048DB7D859225D22177D649C489 /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMOAuth2ViewControllerTouch.h; path = Source/Touch/GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		FB9ABB89BEE83B2C5F5CB2972B28415F /* GTLErrorObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLErrorObject.h; path = Source/Objects/GTLErrorObject.h; sourceTree = "<group>"; };
+		FE4EFC8CBCEB711C13A44435D8912E0E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FF3A280D38233460E201D17BA6E87BAF /* GTMOAuth2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMOAuth2-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04934FCE170484F6BAEB422093561475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1D6684A2AA014D4C01A6691E8AA2A12 /* Foundation.framework in Frameworks */,
+				A707329A8D6BD475D1718C49318701CD /* Security.framework in Frameworks */,
+				EE8DB117A98798152D0EC84FB1C4FF17 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75A540C87303A37CB12F98E9774D13A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672CB6C6EE0F5E3C45FCC5E2CB6F0B9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FB8290CC8E84551F98691C9CB9E55F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5431E0ED94AE4BD61BA7AAD94EFA1918 /* Foundation.framework in Frameworks */,
+				8B2B63BE49D2DBE14760E0CB38F45260 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4491F5F8971DF501D0FADB4975C3A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66543ED9C356971B9810344111E64B4F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004F495CA28A715A0A9B8DE90BF9C321 /* GoogleAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7DDD8EC8648BD9AC62788D0B24430921 /* Core */,
+				B3EB21CEEA741B4C14606F960BEDE2BB /* Gmail */,
+				E5EE4D705217923912FE24DFC7092B46 /* Support Files */,
+			);
+			path = GoogleAPIClient;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AFEDABA15ABE02B6445B873CCCC1141 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		179E607CAA2FDA020897DB1F58B03238 /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				6E953901C640298B2F9FB3A48DB7E43E /* Core */,
+				9E6F41B1BE61B555F84FA46CC249DFF5 /* Full */,
+				EB94BB1C33451635C2411C467AA55B3D /* Support Files */,
+			);
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		5542DB1EEC871BE489BC81C6346ECF12 /* Pods-TYGoogleInbox */ = {
+			isa = PBXGroup;
+			children = (
+				BAD50C1D19EE223E434D31BB37175C9F /* Pods-TYGoogleInbox-acknowledgements.markdown */,
+				004ABDA9E393B3A584B8D5358B355884 /* Pods-TYGoogleInbox-acknowledgements.plist */,
+				BFED43A590607C30B51EF33843197390 /* Pods-TYGoogleInbox-dummy.m */,
+				AAC2AED92EDBDC51019BEC82DDD0F238 /* Pods-TYGoogleInbox-frameworks.sh */,
+				AE8AD76A2C8279867356C8EC08FBFB0D /* Pods-TYGoogleInbox-resources.sh */,
+				070591755746C7CA810C9C3FD676748A /* Pods-TYGoogleInbox.debug.xcconfig */,
+				1421FB8E16C9F7B3FB994CCF86C70660 /* Pods-TYGoogleInbox.release.xcconfig */,
+			);
+			name = "Pods-TYGoogleInbox";
+			path = "Target Support Files/Pods-TYGoogleInbox";
+			sourceTree = "<group>";
+		};
+		5E9ADA55595C278176910F0F1F2A9C64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				004F495CA28A715A0A9B8DE90BF9C321 /* GoogleAPIClient */,
+				E0B5D59C6A0DEE50F54D6A0698569B59 /* GTMOAuth2 */,
+				179E607CAA2FDA020897DB1F58B03238 /* GTMSessionFetcher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		649F282DE993365A1466D80DE143A115 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5542DB1EEC871BE489BC81C6346ECF12 /* Pods-TYGoogleInbox */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6E953901C640298B2F9FB3A48DB7E43E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8095D6140FE90A1A695800708FA48E74 /* GTMSessionFetcher.h */,
+				80156D9FA8ABE8DCEDC98DF1C595F0A4 /* GTMSessionFetcher.m */,
+				3F1228297E5494D124149D07B9E135A3 /* GTMSessionFetcherLogging.h */,
+				3ACA7FC7499A0D68979A3E4D7F785C2F /* GTMSessionFetcherLogging.m */,
+				55D7F78984CC69945E2441ED4739D732 /* GTMSessionFetcherService.h */,
+				141FD109C49851ED64D0CF0E89D07DBB /* GTMSessionFetcherService.m */,
+				9D92A50EAA4FF399D11F91A5A6363778 /* GTMSessionUploadFetcher.h */,
+				9C78CF396FB6A70E1B2D52585917C423 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				5E9ADA55595C278176910F0F1F2A9C64 /* Pods */,
+				BBAE46FF0C59CB723A9FE7839332EB48 /* Products */,
+				649F282DE993365A1466D80DE143A115 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DDD8EC8648BD9AC62788D0B24430921 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D9355A064ABA95C2C67FE4B312F493F /* GTLBase64.h */,
+				48F088B59F63C0FBFD6FB15B9260F018 /* GTLBase64.m */,
+				662EB691A2588889DC1DD5C1D677DB08 /* GTLBatchQuery.h */,
+				051C04B0D8C81F6EC8FF2185D54D0AA9 /* GTLBatchQuery.m */,
+				5F9293976BB2D73EB3AEF331CCC96C56 /* GTLBatchResult.h */,
+				7432FD3A9259EFF83AD5A35A396F8E0E /* GTLBatchResult.m */,
+				451584B917156183558BC8ED788947ED /* GTLDateTime.h */,
+				38A0B94E13D0E529882A8DD82256FFB7 /* GTLDateTime.m */,
+				D7FF9C411D7FD9F19117B908A6DC834F /* GTLDefines.h */,
+				FB9ABB89BEE83B2C5F5CB2972B28415F /* GTLErrorObject.h */,
+				CAC4E71AEE1B390763CF623F2F9695D6 /* GTLErrorObject.m */,
+				2C0D47B707E36A283190A6EC7BA3382E /* GTLFramework.h */,
+				0433FF14DBB00253D5201AA69CD4FD9E /* GTLFramework.m */,
+				BD4AC91A492D899497C3646BB935BF04 /* GTLJSONParser.h */,
+				A0E6AFCFA782D01BB60A63FF401ABFE0 /* GTLJSONParser.m */,
+				6325A6583FCB7043007B6EF9EC9BC77F /* GTLObject.h */,
+				7C6BA6A495A51A9AF707B811F3125585 /* GTLObject.m */,
+				06397D073FEF0E73B75C42196C11C761 /* GTLQuery.h */,
+				7DBC352E2C64CD5823B20550BF5C5604 /* GTLQuery.m */,
+				A803532208EDDADC19478404FE11D796 /* GTLRuntimeCommon.h */,
+				58D892AFCFF023D331C38F970ABE442D /* GTLRuntimeCommon.m */,
+				1A39A29087D926ADE1FFA62C256BC5B3 /* GTLService.h */,
+				DEA5471F07422E3B30E60A34B8517A6C /* GTLService.m */,
+				3E342ABD58464B3C0F44C598008A9591 /* GTLTargetNamespace.h */,
+				9156202A4EDA650BE08368A73F62D76E /* GTLUploadParameters.h */,
+				8089DF7AAC755395B0F84A0F7FE317B2 /* GTLUploadParameters.m */,
+				0CFB822F00188C8FF49BF0EE322F0F6D /* GTLUtilities.h */,
+				230C33C04AC71C06152C5B9D01630A4B /* GTLUtilities.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9AFEDABA15ABE02B6445B873CCCC1141 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AD6EB1E32D6B3FA82EBEAC09987FEA9B /* Foundation.framework */,
+				48E0CB82826DD5417C8B2FB774B3EB97 /* Security.framework */,
+				FE4EFC8CBCEB711C13A44435D8912E0E /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9E6F41B1BE61B555F84FA46CC249DFF5 /* Full */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A46BD8E8E6DAEE7822BD13AE04D62 /* GTMGatherInputStream.h */,
+				E5A88912E84187D57A12944EE6B828D4 /* GTMGatherInputStream.m */,
+				A85188AE8C4809E3B3452014856B2E47 /* GTMMIMEDocument.h */,
+				5E878D64FCCC45CA871F525925405B5F /* GTMMIMEDocument.m */,
+				2405F92FB8179D13D4DD6FCCCA879D7F /* GTMReadMonitorInputStream.h */,
+				8B55097FDA866674400DB6D7C6647653 /* GTMReadMonitorInputStream.m */,
+			);
+			name = Full;
+			sourceTree = "<group>";
+		};
+		9FA4D3F2C9760A801F356FC6F81E7E04 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2413B92D4E73B02BD6F03A135EA86689 /* GTMOAuth2.xcconfig */,
+				BFF4EF061CCE74F1908A5098A5776BB7 /* GTMOAuth2-dummy.m */,
+				FF3A280D38233460E201D17BA6E87BAF /* GTMOAuth2-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMOAuth2";
+			sourceTree = "<group>";
+		};
+		B3EB21CEEA741B4C14606F960BEDE2BB /* Gmail */ = {
+			isa = PBXGroup;
+			children = (
+				6F43291DAF0371316BDDE2C111FD2DDF /* GTLGmail.h */,
+				F39EE40EE9DFE11BA44473161F60D948 /* GTLGmailConstants.h */,
+				7C17FB12D8986586B5008C70064EE02F /* GTLGmailConstants.m */,
+				AE63AA75F42BB1FFC191BC6153B4E0A8 /* GTLGmailDraft.h */,
+				9E1621E1D5DD1A3E9D464E95B66AAF16 /* GTLGmailDraft.m */,
+				C2B7273523C579EC68460629CF8488F6 /* GTLGmailHistory.h */,
+				01E49B10961D8D0F556C19E33C15FC5B /* GTLGmailHistory.m */,
+				9036CFD86F88893C92A04CC1399C30EC /* GTLGmailHistoryLabelAdded.h */,
+				F3758F5DCB74E29162478CB8184152E4 /* GTLGmailHistoryLabelAdded.m */,
+				EC8B7B23993657783C32DB772F0B7ABC /* GTLGmailHistoryLabelRemoved.h */,
+				C8561FF56EC5E0878BA5AAE86D1D1F98 /* GTLGmailHistoryLabelRemoved.m */,
+				37F005D2B1EBB15ECBFFC28755D1C949 /* GTLGmailHistoryMessageAdded.h */,
+				D654EC681CCD9584F4986101F448079E /* GTLGmailHistoryMessageAdded.m */,
+				176DBFCE0C39A87041C68227711F6F8A /* GTLGmailHistoryMessageDeleted.h */,
+				4F93D18C5CD62800EFE774A310835B05 /* GTLGmailHistoryMessageDeleted.m */,
+				628827159301B46FF274241BF2AFB209 /* GTLGmailLabel.h */,
+				4045D1E3B7DCCEDD750D9281EDA263EE /* GTLGmailLabel.m */,
+				0EBEA1B2480DBB0AF87F799F1763671E /* GTLGmailListDraftsResponse.h */,
+				60ED5ED6BCCF7C5047BBCA30440373F2 /* GTLGmailListDraftsResponse.m */,
+				0F6A668AAD7B70A167296AA034BCAC46 /* GTLGmailListHistoryResponse.h */,
+				886EB33E8BB1979C57E418D536FD9F1D /* GTLGmailListHistoryResponse.m */,
+				93AF26C4E936EF4DE6A1E30F1D0E4286 /* GTLGmailListLabelsResponse.h */,
+				5F5A8E365429C665F4025765A92B6119 /* GTLGmailListLabelsResponse.m */,
+				591BBECB0DD469BF661DBC3EE8AD1269 /* GTLGmailListMessagesResponse.h */,
+				EE181F01F1FC306894C602B8AE114EB3 /* GTLGmailListMessagesResponse.m */,
+				F089EEA4F513747129D398918FB8464A /* GTLGmailListThreadsResponse.h */,
+				169CA5367433C2D974904B7D52F1FC06 /* GTLGmailListThreadsResponse.m */,
+				A01C2B71D58A0EA6AF78541F97EDE376 /* GTLGmailMessage.h */,
+				A2D303E0B09B266DCC7C557EAD21B96D /* GTLGmailMessage.m */,
+				989EA4083532703487DBB7DC7E3EBC10 /* GTLGmailMessagePart.h */,
+				0A2728ACE4B4316F17FC6FF7611EB5C7 /* GTLGmailMessagePart.m */,
+				2D629D997AFC1AA173673E58777BD701 /* GTLGmailMessagePartBody.h */,
+				8AF2BBC974DC12D6FD3B1E99202A8BED /* GTLGmailMessagePartBody.m */,
+				A50DB46559157679A914DCDA25B09343 /* GTLGmailMessagePartHeader.h */,
+				D9D8127D6546F74DB8795FF0A94C22A9 /* GTLGmailMessagePartHeader.m */,
+				7D91A92A5DF393A2F439F1CB08C560FA /* GTLGmailProfile.h */,
+				97BFB18D049C63B6DAE74610BC8AA830 /* GTLGmailProfile.m */,
+				5706B3DDCF3CDB2E5EF93196ABA4636B /* GTLGmailThread.h */,
+				1AC1A559CD318D82C08CCDD7A7031621 /* GTLGmailThread.m */,
+				B7589B79A081CA82153B1F0159167F85 /* GTLGmailWatchResponse.h */,
+				1A52EF3F2735AA9326D9DFA8AE13B38F /* GTLGmailWatchResponse.m */,
+				29A36898A529F2B0BD278E81D18D4400 /* GTLQueryGmail.h */,
+				78C54331309A949812EB8CB0F4AB57FD /* GTLQueryGmail.m */,
+				8F112F1DEAD6F7C369623630113053FC /* GTLServiceGmail.h */,
+				A155386D0F6EEEF509CD7585FCBAA494 /* GTLServiceGmail.m */,
+			);
+			name = Gmail;
+			sourceTree = "<group>";
+		};
+		BBAE46FF0C59CB723A9FE7839332EB48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9838E4E5C37988ECDE190D92DA0C5CC6 /* libGoogleAPIClient.a */,
+				E010F5D6B73DDE49208B169A769527BA /* libGTMOAuth2.a */,
+				4B4E8781EC386B92819D4974A922E5E4 /* libGTMSessionFetcher.a */,
+				C4FBFB53E4406F0161FB12B2B2F95446 /* libPods-TYGoogleInbox.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0B5D59C6A0DEE50F54D6A0698569B59 /* GTMOAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				5388A38CA0532B3E9501219432B4E185 /* GTMOAuth2Authentication.h */,
+				04E1D5D4CE80E96A00A0C334DF583ACC /* GTMOAuth2Authentication.m */,
+				F7E53E37FB1249A135C2EDE96FC348D3 /* GTMOAuth2SignIn.h */,
+				520755A8993460C80453AF728D2307C2 /* GTMOAuth2SignIn.m */,
+				FA34F048DB7D859225D22177D649C489 /* GTMOAuth2ViewControllerTouch.h */,
+				919C59A89AD5E631589BF4345F011B51 /* GTMOAuth2ViewControllerTouch.m */,
+				FE8BC4286EAF6C680B88689C9D39DE63 /* Resources */,
+				9FA4D3F2C9760A801F356FC6F81E7E04 /* Support Files */,
+			);
+			path = GTMOAuth2;
+			sourceTree = "<group>";
+		};
+		E5EE4D705217923912FE24DFC7092B46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F961859FB1FBF203E515277A7882C3 /* GoogleAPIClient.xcconfig */,
+				42283B6DB14EE463B20CE4C357D215FD /* GoogleAPIClient-dummy.m */,
+				F9B675943135075DB9AF1A3614147147 /* GoogleAPIClient-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleAPIClient";
+			sourceTree = "<group>";
+		};
+		EB94BB1C33451635C2411C467AA55B3D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C9AB3BF969D42699688313E49EE9737 /* GTMSessionFetcher.xcconfig */,
+				6650F394C48A24CF485034A505D2A5B2 /* GTMSessionFetcher-dummy.m */,
+				37CC7AC6394E944186CA1041E9ADECDE /* GTMSessionFetcher-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		FE8BC4286EAF6C680B88689C9D39DE63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFD74891349FBA94863357846A74422A /* GTMOAuth2ViewTouch.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B03F99A8C028476A0F56769BF8CAF330 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028227BC73AE3ECF40AEF3B5F3B7E3F6 /* GTMGatherInputStream.h in Headers */,
+				D6854C9A379D3F944896E2E372797612 /* GTMMIMEDocument.h in Headers */,
+				6F32C378B16AEE3FA913FBA31E0674E8 /* GTMReadMonitorInputStream.h in Headers */,
+				A671F289347BC77BA9BEFDACE3FE60F4 /* GTMSessionFetcher.h in Headers */,
+				452E06FC18C6A56B30CA8BC8B1870C44 /* GTMSessionFetcherLogging.h in Headers */,
+				A590F16961EC52C384DDE2B731E79FA5 /* GTMSessionFetcherService.h in Headers */,
+				29448E22A83A3AAAA680A3E16688CDAC /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E26BA60BE1EF42C757731C0B5F42A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013773EF96C3CB2262D38011D56E703C /* GTLBase64.h in Headers */,
+				3D94AF2F8086870CFD4CA369480994B7 /* GTLBatchQuery.h in Headers */,
+				74E218317A450A205DFFF989931A90B2 /* GTLBatchResult.h in Headers */,
+				24C4117EBAA4DF39E896AA6FDA1EE0C4 /* GTLDateTime.h in Headers */,
+				FD0F1EA43789B2C125FE5E9676B16CEF /* GTLDefines.h in Headers */,
+				746884B859B574DF7812483D68D58416 /* GTLErrorObject.h in Headers */,
+				2E3ED8B8E60CFAFCB3D9C6A3B3A17E25 /* GTLFramework.h in Headers */,
+				51A7A9DAD8735BFBD3107771D35B2E82 /* GTLGmail.h in Headers */,
+				D0A44C40856DB45D19483C9763EBEF40 /* GTLGmailConstants.h in Headers */,
+				B962847E94D0DE6DA8AC08B8E45916D3 /* GTLGmailDraft.h in Headers */,
+				E8BB7D48DCBB26E6905696B0C047E494 /* GTLGmailHistory.h in Headers */,
+				50C8D711810408FB07257DAF6E396DE9 /* GTLGmailHistoryLabelAdded.h in Headers */,
+				6DC40321D7D901F22F6E4EC34314A1E4 /* GTLGmailHistoryLabelRemoved.h in Headers */,
+				4D1EAAB4816458A85403FEE0E00147D7 /* GTLGmailHistoryMessageAdded.h in Headers */,
+				BAF69D1F55A91E0144DAC44BB811A3C6 /* GTLGmailHistoryMessageDeleted.h in Headers */,
+				A2A2711C67B61805B12ED436D6E3AAF3 /* GTLGmailLabel.h in Headers */,
+				6FF1B2CDA99FE21FB4630322FCCE4B11 /* GTLGmailListDraftsResponse.h in Headers */,
+				07B168F205DC8DB2808456FA9944F0F7 /* GTLGmailListHistoryResponse.h in Headers */,
+				1959B1C843C9193019A1ECA55C5108CC /* GTLGmailListLabelsResponse.h in Headers */,
+				5A2C13825701F9543CE8F4EDC447777D /* GTLGmailListMessagesResponse.h in Headers */,
+				0B4DEFCC1973E0888AD67AFEEC6C8D76 /* GTLGmailListThreadsResponse.h in Headers */,
+				406729424C86751E08E6CFB9C7F12FE6 /* GTLGmailMessage.h in Headers */,
+				AC03D30497FC9093F9254B773F8A8DD1 /* GTLGmailMessagePart.h in Headers */,
+				421900F2BA754E093B5E52F712C7C617 /* GTLGmailMessagePartBody.h in Headers */,
+				BA136E571DE04F37E13845D137139398 /* GTLGmailMessagePartHeader.h in Headers */,
+				2D5F965EAA5690C7139DFF1D8B6B2183 /* GTLGmailProfile.h in Headers */,
+				8A16D075EE66B2B7D4F9213CC3877281 /* GTLGmailThread.h in Headers */,
+				4E9C876BF3D1DF8022500FE9952286EA /* GTLGmailWatchResponse.h in Headers */,
+				24F1850592C1A6698C69FBAC9BB43759 /* GTLJSONParser.h in Headers */,
+				18E8D13EBDE57601D527315AD96545AF /* GTLObject.h in Headers */,
+				321359BC4174B407FCC7FB48B583960C /* GTLQuery.h in Headers */,
+				271EE93B5FA90710E87CFAE13F7188B0 /* GTLQueryGmail.h in Headers */,
+				96719DFA23FF0BA4124C20F9189CEB4D /* GTLRuntimeCommon.h in Headers */,
+				89CD78524F5A15585ED0B00575F6260C /* GTLService.h in Headers */,
+				738D0B907D94CE9CF6B50C33F02F9045 /* GTLServiceGmail.h in Headers */,
+				B7449DE9E9B257F8F9DFAB06C9A30B0F /* GTLTargetNamespace.h in Headers */,
+				2ED7BBA469BB69D88D92FE798FB46584 /* GTLUploadParameters.h in Headers */,
+				60004E63BB42C2901F2482A4B0F79429 /* GTLUtilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F2D9F85EE455A8A9DF0BACF4BBE9C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF6EB9DBC8638C3A7C5D7F2AA6024F8 /* GTMOAuth2Authentication.h in Headers */,
+				E99B88128E29AE015F35EB98F6F484A3 /* GTMOAuth2SignIn.h in Headers */,
+				E0E1F562587D43FA7AC920586922CDE4 /* GTMOAuth2ViewControllerTouch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0C79D030E836DBD01086E30D13BDE5DB /* Pods-TYGoogleInbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7666B3538F3C8498C4E66483C6373D7B /* Build configuration list for PBXNativeTarget "Pods-TYGoogleInbox" */;
+			buildPhases = (
+				0778DF085E148CBB596BA6AF47325902 /* Sources */,
+				8C4491F5F8971DF501D0FADB4975C3A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBC034276F48BCE8D179B2B438E04BA0 /* PBXTargetDependency */,
+				CAA1B4B1A76E64BAE1BC374CCA64228D /* PBXTargetDependency */,
+				FD866618A77DF00BF95D9AA5049BCD60 /* PBXTargetDependency */,
+			);
+			name = "Pods-TYGoogleInbox";
+			productName = "Pods-TYGoogleInbox";
+			productReference = C4FBFB53E4406F0161FB12B2B2F95446 /* libPods-TYGoogleInbox.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3EC508E2AD93A8B7862551E8450FF1A8 /* GTMOAuth2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B194FB671FADE654497CAECC212027 /* Build configuration list for PBXNativeTarget "GTMOAuth2" */;
+			buildPhases = (
+				141E64524470893419239CEF5C073B6D /* Sources */,
+				04934FCE170484F6BAEB422093561475 /* Frameworks */,
+				C9F2D9F85EE455A8A9DF0BACF4BBE9C9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C09344060868BBBE99FDDDD1FEC1F5C4 /* PBXTargetDependency */,
+			);
+			name = GTMOAuth2;
+			productName = GTMOAuth2;
+			productReference = E010F5D6B73DDE49208B169A769527BA /* libGTMOAuth2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8F1816C9580C0DC0779C05DD88D95E73 /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F5EA67DFC7B91ADFC9411A57E4DD41B /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				F35059C48625BAF0C6DACD9E13D8E449 /* Sources */,
+				7FB8290CC8E84551F98691C9CB9E55F2 /* Frameworks */,
+				B03F99A8C028476A0F56769BF8CAF330 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = 4B4E8781EC386B92819D4974A922E5E4 /* libGTMSessionFetcher.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E51BDE1CE7AB28A31330558A6B312184 /* GoogleAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABBF3DD04E668DB73ED419FFE0AD5469 /* Build configuration list for PBXNativeTarget "GoogleAPIClient" */;
+			buildPhases = (
+				10406300AEA8EB3B10D8BC06B492A69E /* Sources */,
+				75A540C87303A37CB12F98E9774D13A9 /* Frameworks */,
+				C3E26BA60BE1EF42C757731C0B5F42A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDF5E2007B8936BC0AB0963BC6A6A5F4 /* PBXTargetDependency */,
+			);
+			name = GoogleAPIClient;
+			productName = GoogleAPIClient;
+			productReference = 9838E4E5C37988ECDE190D92DA0C5CC6 /* libGoogleAPIClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BBAE46FF0C59CB723A9FE7839332EB48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E51BDE1CE7AB28A31330558A6B312184 /* GoogleAPIClient */,
+				3EC508E2AD93A8B7862551E8450FF1A8 /* GTMOAuth2 */,
+				8F1816C9580C0DC0779C05DD88D95E73 /* GTMSessionFetcher */,
+				0C79D030E836DBD01086E30D13BDE5DB /* Pods-TYGoogleInbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0778DF085E148CBB596BA6AF47325902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86CF5131E04A667EE381C38F172FB92E /* Pods-TYGoogleInbox-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10406300AEA8EB3B10D8BC06B492A69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EBE608ABAAB74AAE9BE445C967FBC9 /* GoogleAPIClient-dummy.m in Sources */,
+				AF693322BAD5D3D0531CC113B455E84E /* GTLBase64.m in Sources */,
+				D2341E00E701E1B0047F7E5F1DBAC940 /* GTLBatchQuery.m in Sources */,
+				BAB8271B2211193D28B624130FBBCC6B /* GTLBatchResult.m in Sources */,
+				AC20193402CF7A3BFACF3254F77A4FCF /* GTLDateTime.m in Sources */,
+				6375578946FC47FDABC95E0C26BE44CA /* GTLErrorObject.m in Sources */,
+				441E41B9EDB94A48F25FBE3EA8E30DA3 /* GTLFramework.m in Sources */,
+				A73C9125CBCB8FADEDEBE8D645F14C4E /* GTLGmailConstants.m in Sources */,
+				87A1D56D03DF6C5ABFA30D103060AE3A /* GTLGmailDraft.m in Sources */,
+				20C229A9E96AC1B5EF987FDC72860EBE /* GTLGmailHistory.m in Sources */,
+				ACC2D9024646A827532DA1920802446B /* GTLGmailHistoryLabelAdded.m in Sources */,
+				2450C50D555B3AA9F7D1470040285C05 /* GTLGmailHistoryLabelRemoved.m in Sources */,
+				E3D17CF9EF750F324D793C8D2BCE0664 /* GTLGmailHistoryMessageAdded.m in Sources */,
+				6E1EC0DD52CD0DDE7C3BEE4FE0C96113 /* GTLGmailHistoryMessageDeleted.m in Sources */,
+				67DF14A72CD3DA705B8F515ABA2BBAFB /* GTLGmailLabel.m in Sources */,
+				41C1FBEA93D4EEE88C3509F56541F8E4 /* GTLGmailListDraftsResponse.m in Sources */,
+				119FE29BCD703AA49C27FD238F804495 /* GTLGmailListHistoryResponse.m in Sources */,
+				141D7B77AFEE698EB7F7E64544F74E57 /* GTLGmailListLabelsResponse.m in Sources */,
+				783133A64946F813D13C12CD05C1A3D8 /* GTLGmailListMessagesResponse.m in Sources */,
+				BF88CF80FAD38F2CEC411634C18344F0 /* GTLGmailListThreadsResponse.m in Sources */,
+				D6A2E78847EF81A68F0C76D309EECB48 /* GTLGmailMessage.m in Sources */,
+				443E874767EBF345B20314A10A256E01 /* GTLGmailMessagePart.m in Sources */,
+				0F5DBB9D0C3ECC03F304F7B41023132B /* GTLGmailMessagePartBody.m in Sources */,
+				63BE61EDF3579A70525D34C02500D812 /* GTLGmailMessagePartHeader.m in Sources */,
+				C06CA9ABC559E172B9F80F64F1F58B15 /* GTLGmailProfile.m in Sources */,
+				9A62E8334FF8C3C50A35FF5D429FF5C2 /* GTLGmailThread.m in Sources */,
+				3A678CE8A3B2B2ADBD8705D59A69DDA7 /* GTLGmailWatchResponse.m in Sources */,
+				ECB6EDB43E82AAE92DBA6D1F0275EDF6 /* GTLJSONParser.m in Sources */,
+				473955C8D4CF9B58CCCF5DA7179D85DD /* GTLObject.m in Sources */,
+				8BF5735791AB5809114959474BB19A4E /* GTLQuery.m in Sources */,
+				7C90F0E197C73851BA24143F166FF750 /* GTLQueryGmail.m in Sources */,
+				8FDCB4C7E67DD4AF0614437BD4532802 /* GTLRuntimeCommon.m in Sources */,
+				CFE668491CFE89A6EE9B45CBFD601A1B /* GTLService.m in Sources */,
+				B96D28CF83EC0867AB4037C3D5AD5E6F /* GTLServiceGmail.m in Sources */,
+				121FE13BA5E8937B28340EDBCB939C8B /* GTLUploadParameters.m in Sources */,
+				61391F4205A162CF5678A987B5682B9E /* GTLUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141E64524470893419239CEF5C073B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9045C69824A40D51D5F6F70AE7BABEE /* GTMOAuth2-dummy.m in Sources */,
+				40298B9B6A547B8AC5C90C939EDA13BD /* GTMOAuth2Authentication.m in Sources */,
+				684F195513AE5221C7596424B582F595 /* GTMOAuth2SignIn.m in Sources */,
+				B8F1945663D5975A06A8549B01E20FE0 /* GTMOAuth2ViewControllerTouch.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F35059C48625BAF0C6DACD9E13D8E449 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04802C5C663DCD2A0BE271EBA3F4AD14 /* GTMGatherInputStream.m in Sources */,
+				E0158B51F574F57C739D52C9B93B15D0 /* GTMMIMEDocument.m in Sources */,
+				CBAB4E0516901EEA50D655FE533388F6 /* GTMReadMonitorInputStream.m in Sources */,
+				2BF9D18E5BF7F195C793E4BF2D81BDEE /* GTMSessionFetcher-dummy.m in Sources */,
+				F1985B511DF21E1D8C095AE1B841E009 /* GTMSessionFetcher.m in Sources */,
+				E854EA55BEF49BA4D186E1ABFE54A91E /* GTMSessionFetcherLogging.m in Sources */,
+				AAA0682814C86D8FED1B7B8B365FE578 /* GTMSessionFetcherService.m in Sources */,
+				14EE7389F53B53BFBA74342132E5CDA7 /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C09344060868BBBE99FDDDD1FEC1F5C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = 8F1816C9580C0DC0779C05DD88D95E73 /* GTMSessionFetcher */;
+			targetProxy = 08E45C5E1A5EC0E952D7DD821EE1B47B /* PBXContainerItemProxy */;
+		};
+		CAA1B4B1A76E64BAE1BC374CCA64228D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = 8F1816C9580C0DC0779C05DD88D95E73 /* GTMSessionFetcher */;
+			targetProxy = A29ED5CEC6160B6B21105C8A5AD0B652 /* PBXContainerItemProxy */;
+		};
+		CDF5E2007B8936BC0AB0963BC6A6A5F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = 8F1816C9580C0DC0779C05DD88D95E73 /* GTMSessionFetcher */;
+			targetProxy = FB6D5E3194B21D18513285A0DCE4153C /* PBXContainerItemProxy */;
+		};
+		DBC034276F48BCE8D179B2B438E04BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMOAuth2;
+			target = 3EC508E2AD93A8B7862551E8450FF1A8 /* GTMOAuth2 */;
+			targetProxy = 2EEBE96DAC2EE5BBB1BD829AD4FF51AA /* PBXContainerItemProxy */;
+		};
+		FD866618A77DF00BF95D9AA5049BCD60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleAPIClient;
+			target = E51BDE1CE7AB28A31330558A6B312184 /* GoogleAPIClient */;
+			targetProxy = B17CB63D5D6BD0F7D76DD579490436DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D65CE55D4A6C92435890BFC29AA0B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F961859FB1FBF203E515277A7882C3 /* GoogleAPIClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleAPIClient/GoogleAPIClient-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E3EDDE7571ABE8833E61291F7AD75C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2413B92D4E73B02BD6F03A135EA86689 /* GTMOAuth2.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMOAuth2/GTMOAuth2-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7A153E4C6E271952AC82B15A0687E393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2413B92D4E73B02BD6F03A135EA86689 /* GTMOAuth2.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMOAuth2/GTMOAuth2-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7D5A96C28D3780A457137CEC7DECD645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9AB3BF969D42699688313E49EE9737 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		83708BF34CDFCF539C1E660A083A718B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F961859FB1FBF203E515277A7882C3 /* GoogleAPIClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleAPIClient/GoogleAPIClient-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		85A1B8D434E9287D4557AEB3D14560D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9AB3BF969D42699688313E49EE9737 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E22CF7C54151F990C053BC5F1A92ACAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070591755746C7CA810C9C3FD676748A /* Pods-TYGoogleInbox.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F988B4378BF420D1A08FE2E48D92557F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1421FB8E16C9F7B3FB994CCF86C70660 /* Pods-TYGoogleInbox.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14B194FB671FADE654497CAECC212027 /* Build configuration list for PBXNativeTarget "GTMOAuth2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A153E4C6E271952AC82B15A0687E393 /* Debug */,
+				5E3EDDE7571ABE8833E61291F7AD75C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7666B3538F3C8498C4E66483C6373D7B /* Build configuration list for PBXNativeTarget "Pods-TYGoogleInbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22CF7C54151F990C053BC5F1A92ACAF /* Debug */,
+				F988B4378BF420D1A08FE2E48D92557F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F5EA67DFC7B91ADFC9411A57E4DD41B /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A1B8D434E9287D4557AEB3D14560D4 /* Debug */,
+				7D5A96C28D3780A457137CEC7DECD645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABBF3DD04E668DB73ED419FFE0AD5469 /* Build configuration list for PBXNativeTarget "GoogleAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83708BF34CDFCF539C1E660A083A718B /* Debug */,
+				1D65CE55D4A6C92435890BFC29AA0B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
